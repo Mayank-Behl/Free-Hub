@@ -1,0 +1,10 @@
+Top Banner
+Nav Bar 
+Header Section
+Companies Section
+Features Section
+Big Feature Section x 3
+Examples Section
+CTA Section
+Footer Section
+Sub Footer Section
