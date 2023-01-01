@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Free Hub</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
     <!---TOP Banner-->
@@ -24,7 +25,7 @@
         <a href="" class="company-logo">
           <img src="./images/logo.jpg" alt="company logo" />
         </a>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <ul class="flex">
             <li><a href="#" class="hover-link">Products</a></li>
             <li><a href="#" class="hover-link">Customer</a></li>
@@ -34,6 +35,9 @@
             <li><a href="#" class="hover-link primary-button">Sign up</a></li>
           </ul>
         </div>
+        <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
     </nav>
 
@@ -152,16 +156,18 @@
       </div>
     </section>
     <section class="big-feature-section">
-      <div class="container flex big-feature-container">
+      <div class="container flex big-feature-container" id="second-big-feature">
+        <div class="feature-img">
+          <img src="./images/asset 21.png" alt="" />
+        </div>
         <div class="feature-desc flex">
           <h4>Optimisation for</h4>
           <h3>Marketers</h3>
           <p>
-            Fine-tune landing pages, messaging, and creative, helping you optimise conversion rates on marketing campaigns and product launches.
+            Fine-tune landing pages, messaging, and creative, helping you
+            optimise conversion rates on marketing campaigns and product
+            launches.
           </p>
-        </div>
-        <div class="feature-img">
-          <img src="./images/asset 21.png" alt="" />
         </div>
       </div>
     </section>
@@ -174,14 +180,15 @@
           <h4>Easier decision making for</h4>
           <h3>Product managers</h3>
           <p>
-            Ensure you’re delivering the right features to the right customers by validating product concepts with your target audience.
+            Ensure you’re delivering the right features to the right customers
+            by validating product concepts with your target audience.
           </p>
         </div>
       </div>
     </section>
 
     <!-- examples section -->
-    <section class="examles-section">
+    <section class="examples-section">
       <div class="container">
         <div class="examples-header flex">
           <h2 class="examples-heading-text">
@@ -275,5 +282,13 @@
       src="https://kit.fontawesome.com/30dc3ad54b.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggleButton = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+
+      toggleButton.addEventListener('click', ()=>{
+        navLinks.classList.toggle('active');
+      })
+    </script>
   </body>
 </html>
